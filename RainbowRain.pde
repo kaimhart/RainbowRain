@@ -2,7 +2,7 @@ Drop[] drops;
 color[] rainbow;
 
 void setup() {
-  size(1280, 720);
+  size(1280, 720, P2D);
   rainbow = new color[] {
               color(255, 0, 0),
               color(255, 127, 0),
@@ -12,7 +12,7 @@ void setup() {
               color(75, 0, 130),
               color(143, 0, 255)
             };
-  drops = new Drop[800];
+  drops = new Drop[2000];
   for (int i = 0; i < drops.length; i++) {
     drops[i] = new Drop();
   }
